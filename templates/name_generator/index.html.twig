@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ person.name }} {{ person.sureName }}!{% endblock %}
+
+
+
+{% block body %}
+<div>
+    <p>
+        naam: {{ person.name }}<br>
+        achternaam: {{ person.sureName }}<br>
+        geslacht: {{ person.gender }}<br>
+        land: {{ person.region }}<br>
+        leeftijd: {{ person.age }}<br>
+        aanspraak: {{ person.title }}<br>
+        telefoon nummer: {{ person.phone }}<br>
+        geboorte datum: {{ person.birthday|date("d/m/Y") }}<br>
+        email: {{ person.email }}<br>
+        password: {{ person.password }}<br>
+    </p>
+</div>
+{% endblock %}
